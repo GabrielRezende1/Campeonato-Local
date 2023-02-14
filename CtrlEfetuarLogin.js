@@ -41,8 +41,7 @@ module.exports = {
 
     // Se algum erro foi definido, mando de novo para a página com o formulário
     if(params.error != null) {
-      reply.view("/src/pages/login.hbs", params);
-      return;
+      return reply.view("/src/pages/login.hbs", params);
     }
     
     

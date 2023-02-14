@@ -29,8 +29,7 @@ module.exports = {
     let senha = request.cookies.senha;
     if(conta == null || conta == undefined || senha == "usuario") {
       params.error = "Usuário não autenticado!";
-      reply.view("/src/pages/login.hbs", params);
-      return;
+      return reply.view("/src/pages/login.hbs", params);
     }
 
     params.operacao = OPERACAO;

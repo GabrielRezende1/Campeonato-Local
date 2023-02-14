@@ -2,11 +2,14 @@
  * Módulo para manipular o banco de dados SQLite do campeonato
  */
 
+//Para dinamicamente acessar arquivos
+const path = require("path");
+
 // Para acesso ao FileSystem
 const fs = require("fs");
 
 // Inicialização do Banco de Dados
-const dbFile = "C:/Users/Gabriel S. Rezende/Downloads/Campeonato-AV2-main/src/database/time.db";
+const dbFile = path.resolve(__dirname, "./database/time.db");
 const dbExiste = fs.existsSync(dbFile);
 const sqlite3 = require("sqlite3").verbose();
 const sqlite = require("sqlite");

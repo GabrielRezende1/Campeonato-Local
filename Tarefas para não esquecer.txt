@@ -1,3 +1,6 @@
 PROBLEMA ATUAL:
     - Consertar @fastify/view (antigo point-of-view)
         > Página não carrega
+
+PARA QUEM BAIXAR:
+    - Alterar caminhos estáticos para dinâmicos de arquivos (se existirem)

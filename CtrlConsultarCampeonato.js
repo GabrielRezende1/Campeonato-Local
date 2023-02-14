@@ -24,8 +24,7 @@ module.exports = {
     console.log("ConsultarCampeonato.js =>" + JSON.stringify(request.cookies));
     if(conta == null || conta == undefined) {
       params.error = "Usuário não autenticado!";
-      reply.view("/src/pages/login.hbs", params);
-      return;
+      return reply.view("/src/pages/login.hbs", params);
     }
     
     // Indicamos que queremos ver os resultados.
@@ -52,7 +51,7 @@ module.exports = {
 
     // Se a requisição veio com o parâmetro 'raw', devolvo o JSON com o conteúdo dos times.
     // Se não, solicito a renderização da página index.hbs
-    reply.view("/src/pages/index.hbs", params);
+    return reply.view("/src/pages/index.hbs", params);
   },
   
   consultarTimeEspecifico: async (request, reply) => {
@@ -64,8 +63,7 @@ module.exports = {
     let conta = request.cookies.conta;
     if(conta == null || conta == undefined) {
       params.error = "Usuário não autenticado!";
-      reply.view("/src/pages/login.hbs", params);
-      return;
+      return reply.view("/src/pages/login.hbs", params);
     }
     
     //Recuperando campeonato específico para especificar no index

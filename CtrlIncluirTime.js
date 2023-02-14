@@ -69,8 +69,7 @@ module.exports = {
     let conta = request.cookies.conta;
     if(conta == null || conta == undefined) {
       params.error = "Usuário não autenticado!";
-      reply.view("/src/pages/login.hbs", params);
-      return;
+      return reply.view("/src/pages/login.hbs", params);
     }
 
     
