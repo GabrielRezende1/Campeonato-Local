@@ -1,0 +1,3 @@
+PROBLEMA ATUAL:
+    - Consertar @fastify/view (antigo point-of-view)
+        > Página não carrega
