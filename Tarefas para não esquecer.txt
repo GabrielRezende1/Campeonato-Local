@@ -1,6 +1,10 @@
 PROBLEMA ATUAL:
     - Consertar @fastify/view (antigo point-of-view)
         > Página não carrega
+    - Cookie não está aparecendo no browser, mas é criado (@fastify/cookie)
+        https://stackoverflow.com/questions/69487582/cookie-works-when-i-use-postman-but-does-not-show-in-browser
+        https://www.npmjs.com/package/@fastify/cookie?activeTab=readme
+        https://stackoverflow.com/questions/71102710/unable-to-set-cookie-in-nestjs-typeerror-cannot-set-properties-of-undefined-s
 
 PARA QUEM BAIXAR:
     - Alterar caminhos estáticos para dinâmicos de arquivos (se existirem)

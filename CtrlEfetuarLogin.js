@@ -14,7 +14,6 @@ module.exports = {
   
   apresentarFormLogin: async (request, reply) => {
     let params = { seo: seo };
-
     // Se a requisição veio com o parâmetro 'raw', devolvo o JSON com o conteúdo dos times.
     // Se não, solicito a renderização da página index.hbs
     return reply.view("/src/pages/login.hbs", params);
@@ -57,7 +56,7 @@ module.exports = {
         secure: true,
         sameSite: 'lax',
         httpOnly: true
-      });
+      }).cookie('conta ', 'admin');
       
       request.cookies.conta = 'admin';
       request.cookies.senha = 'admin';
@@ -72,7 +71,7 @@ module.exports = {
         secure: true,
         sameSite: 'lax',
         httpOnly: true
-      });
+      }).cookie('conta ', 'usuario');
       
       request.cookies.conta = 'usuario';
       request.cookies.senha = 'usuario';

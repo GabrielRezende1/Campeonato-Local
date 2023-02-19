@@ -24,7 +24,7 @@ servidor.register(require("@fastify/formbody"));
 
 // Configurando o Fastify para usar cookies
 servidor.register(require('@fastify/cookie'), {
-  secret: ["admin", "usuario"],     // for cookies signature
+  secret: ["usuario", "admin"],     // for cookies signature
   hook: 'onRequest',
   parseOptions: {}      // options for parsing cookies
 });

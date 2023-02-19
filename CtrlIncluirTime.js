@@ -25,8 +25,7 @@ module.exports = {
     console.log("IncluirTime.js =>" + JSON.stringify(request.cookies));
     if(conta == null || conta == undefined || senha == 'usuario') {
       params.error = "* Usuário não autenticado!";
-      reply.view("/src/pages/login.hbs", params);
-      return;
+      return reply.view("/src/pages/login.hbs", params);
     }
     
     ///### servidor.usuariosAtivos[conta] = { ultimaChamada : new Date()};

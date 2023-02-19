@@ -15,8 +15,8 @@ const sqlite3 = require("sqlite3").verbose();
 const sqlite = require("sqlite");
 let db;
 
-console.log(dbFile);
-console.log(dbExiste);
+//console.log(dbFile);
+//console.log(dbExiste);
 
 // Solicitando a abertura do Banco de Dados
 sqlite.open({ filename: dbFile, driver: sqlite3.Database})
