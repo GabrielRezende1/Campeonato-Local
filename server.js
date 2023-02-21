@@ -1,7 +1,7 @@
 'use strict'
 
 require("dotenv").config();
-console.log(process.env);
+//console.log(process.env);
 
 // Para especificações de path 
 const path = require("path");
@@ -43,7 +43,7 @@ servidor.register(require("@fastify/view"), {
 const fs = require("fs");  
 const { config } = require("process");
 let nomesPartials = process.env.PARTIALS.split(","); 
-console.log(nomesPartials);
+//console.log(nomesPartials);
 for(let i = 0; i < nomesPartials.length; i++) {
   let nome = nomesPartials[i];
   hbs.registerPartial(nome, fs.readFileSync(path.join(__dirname, 'src', 'pages', nome+'.hbs'), 'utf8'));
@@ -53,7 +53,7 @@ for(let i = 0; i < nomesPartials.length; i++) {
 // Carga dinâmica dos controladores de Caso de Uso (Injeção de Dependência)
 //
 let nomesCtrl = process.env.CONTROLADORES.split(","); 
-console.log(nomesCtrl);
+//console.log(nomesCtrl);
 for(let i = 0; i < nomesCtrl.length; i++) {
   let ctrl = require("./" + nomesCtrl[i] + ".js");
   ctrl.configurar(servidor);

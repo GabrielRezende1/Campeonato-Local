@@ -54,9 +54,11 @@ module.exports = {
 
     // Se a requisição veio com o parâmetro 'raw', devolvo o JSON com o conteúdo dos votos.
     // Se não, solicito a renderização da página index.hbs
-    request.query.raw
-      ? reply.send(params)
-      : reply.view("/src/pages/index.hbs", params);
+    if (request.query.raw == true) {
+      reply.send(params);
+    } else {
+      return reply.view("/src/pages/index.hbs", params);
+    }
   },
 
   incluirTime: async (request, reply) => {
