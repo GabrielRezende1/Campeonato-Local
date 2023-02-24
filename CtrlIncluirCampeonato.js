@@ -36,9 +36,11 @@ module.exports = {
     
     // Se a requisição veio com o parâmetro 'raw', devolvo o JSON com o conteúdo dos votos.
     // Se não, solicito a renderização da página form.hbs
-    request.query.raw
-      ? reply.send(params)
-      : reply.view("/src/pages/formCamp.hbs", params);
+    if (request.query.raw == true) {
+      reply.send(params);
+    } else {
+      return reply.view("/src/pages/formCamp.hbs", params);
+    }
   },
   
   incluir: async (request, reply) => {
