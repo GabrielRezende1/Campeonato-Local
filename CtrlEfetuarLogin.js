@@ -56,7 +56,7 @@ module.exports = {
         secure: true,
         sameSite: 'lax',
         httpOnly: true
-      }).cookie('conta ', 'admin');
+      }).cookie('conta', 'admin').cookie('senha', 'admin');
       
       request.cookies.conta = 'admin';
       request.cookies.senha = 'admin';
@@ -71,7 +71,7 @@ module.exports = {
         secure: true,
         sameSite: 'lax',
         httpOnly: true
-      }).cookie('conta ', 'usuario');
+      }).cookie('conta', 'usuario').cookie('senha', 'usuario');;
       
       request.cookies.conta = 'usuario';
       request.cookies.senha = 'usuario';
