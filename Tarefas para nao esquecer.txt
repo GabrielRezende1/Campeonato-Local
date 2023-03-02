@@ -1,6 +1,4 @@
 PROBLEMA ATUAL:
-    - request.cookies não está recuperando a senha numa segunda visita ao link
-        > faz com que a condição de mostrar outros links não active
-        > talvez a condição só funcione no path "/"?
+
 PARA QUEM BAIXAR:
     - Alterar caminhos estáticos para dinâmicos de arquivos (se existirem)
