@@ -1,8 +1,10 @@
 # Campeonato-Local
 
-Versão de utilização local do repositório "Campeonato-AV2" utilizando Node.JS. 
+Versão de utilização local do repositório "[Campeonato-AV2](https://github.com/GabrielRezende1/Campeonato-AV2)" utilizando Node.JS. 
 
-Várias modificações foram necessárias para torná-lo um app local, além de atualizações de pacotes npm depreciados em relação ao projeto feito no Glitch.
+Projeto de Login + CRUD seguindo o modelo MVC (Model-View-Controller) simulando um Campeonato de jogos feito ao longo das aulas de Linguagem de Programação Web na FAETERJ-PARACAMBI. 
+
+Várias modificações foram necessárias para torná-lo um app local, além de atualizações de pacotes npm depreciados em relação ao projeto "Campeonato-AV2" feito no Glitch.
 
 # Como utilizar
 1. Instale as dependências na pasta de seu projeto
