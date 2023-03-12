@@ -33,6 +33,7 @@ module.exports = {
     
     params.operacao = OPERACAO;
     params.funcao = INCLUIR_CAMPEONATO;
+    params.rodapeAdmin = true;
     
     // Se a requisição veio com o parâmetro 'raw', devolvo o JSON com o conteúdo dos votos.
     // Se não, solicito a renderização da página form.hbs
