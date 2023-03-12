@@ -1,5 +1,4 @@
 PROBLEMA ATUAL:
-    - formCamp.hbs não está renderizando o rodapeAdmin
     - maxAge do cookie não funciona
 PARA QUEM BAIXAR:
     - Alterar caminhos estáticos para dinâmicos de arquivos (se existirem)
