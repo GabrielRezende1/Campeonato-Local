@@ -1,7 +1,7 @@
 {
-  "name": "exemplo-sqlite",
-  "version": "0.0.1",
-  "description": "Exemplo de desenvolvimento cliente-servidor com node.js, fastify e SQLite",
+  "name": "campeonato-local",
+  "version": "0.1.11",
+  "description": "Exemplo de desenvolvimento cliente-servidor com Node.js, Fastify e SQLite",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -23,12 +23,14 @@
     "node": "18.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/hello-sqlite"
+    "url": "https://github.com/GabrielRezende1/Campeonato-Local"
   },
   "license": "MIT",
   "keywords": [
     "node",
-    "glitch",
-    "sqlite"
+    "fastify",
+    "sqlite",
+    "dotenv",
+    "handlebars"
   ]
 }
